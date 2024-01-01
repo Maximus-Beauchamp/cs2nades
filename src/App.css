@@ -1,0 +1,23 @@
+.map-container {
+  width: 790px;
+  height: 790px;
+}
+
+.map-content {
+  width: 100%;
+  height: 100%;
+}
+
+#map-image {
+  width: 100%;
+  height: auto;
+  /* Add other styles as needed */
+}
+
+#draw-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Set width and height to match the map image */
+  /* Add other styles as needed */
+}

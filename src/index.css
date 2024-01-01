@@ -1,0 +1,136 @@
+/* Basic CSS Reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #333;
+}
+header, 
+notesHeader {
+  height: 50px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  margin: 0 auto;
+}
+/* Styles for the app layout */
+.app-container {
+  display: flex;
+  background-color: #333;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  width: 200px; /* Adjust the width as needed */
+  background-color: #333; /* Background color for the column */
+  padding: 10px; /* Add padding for spacing */
+  
+}
+.column-block  {
+  margin-bottom: 20px;
+  background-color: #444;
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+.column-block button {
+  background-color: #2e506d;
+  color: white; /* Set button text color to white */
+  padding: 8px 12px; /* Adjust padding for buttons */
+  border: none; /* Remove button border */
+  margin-bottom: 5px; /* Adjust margin between buttons */
+  border-radius: 3px; /* Optional: Add some border radius */
+  background-size: cover;
+}
+.column-block .erase {
+  background-color: red;
+}
+.smoke,
+.flash,
+.grenade,
+.molotov,
+.decoy {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+.smoke {
+  background-image: url('./Assets/smoke.png') ;
+  background-position: center;
+}
+.flash {
+  background-image: url('./Assets/flash.png') ;
+  background-position: center;
+}
+.grenade {
+  background-image: url('./Assets/grenade.png') ;
+  background-position: center;
+}
+.molotov {
+  background-image: url('./Assets/molly.png') ;
+  background-position: center;
+}
+.decoy {
+  background-image: url('./Assets/decoy.png');
+  background-position: center;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95); /* Slightly reduce size on click */
+}
+.map-container {
+  width: 790px;
+  height: 790px;
+  position: relative;
+  margin-right: 20px; /* Add margin to the right side of the map container */
+}
+
+#map-image {
+  max-width: 100%;
+  height: auto;
+}
+.notes-section {
+  flex: 1; /* Take remaining space */
+  background-color: #444; /* Match the background color */
+  color: white; /* Text color */
+  padding: 20px; /* Add padding for content */
+  border-radius: 10px; /* Add a border radius for rounded corners */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds container */
+}
+
+/* Example of a note within the notes section */
+.note {
+  margin-bottom: 15px; /* Add margin between notes */
+  padding: 10px;
+  background-color: #555; /* Note background color */
+  border-radius: 5px;
+}
