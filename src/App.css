@@ -1,23 +1,89 @@
-.map-container {
-  width: 790px;
-  height: 790px;
-}
-
-.map-content {
-  width: 100%;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #333;
   height: 100%;
 }
 
-#map-image {
-  width: 100%;
-  height: auto;
-  /* Add other styles as needed */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-#draw-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* Set width and height to match the map image */
-  /* Add other styles as needed */
+
+.main-content {
+  display: flex;
+  align-items: flex-start; /* Align items to the start (top) of the flex container */
 }
+
+
+.utility-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+
+.canvas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; /* Adjust the margin as needed */
+}
+
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+button:hover {
+  background-color: #2980b9;
+  cursor: pointer;
+}
+
+
+button:active {
+  transform: scale(0.95); /* Slightly reduce size on click */
+}
+.utility-container button {
+  background-color: #2e506d;
+  color: white; /* Set button text color to white */
+  padding: 8px 12px; /* Adjust padding for buttons */
+  border: none; /* Remove button border */
+  margin-bottom: 5px; /* Adjust margin between buttons */
+  border-radius: 3px; /* Optional: Add some border radius */
+  background-size: cover;
+}
+.utility-container  {
+  margin-bottom: 20px;
+  background-color: #444;
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.canvas-container {
+  width: 800px;
+  height: 800px;
+  position: relative;
+}
+
+
+
+
+
+
